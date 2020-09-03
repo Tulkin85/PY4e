@@ -1,5 +1,11 @@
-import random
+import turtle
+bob = turtle.Turtle()
 
-for i in range(10):
-    x = random.random()
-    print(x)
+def square(t, length):
+    for i in range(4):
+        t.fd(length)
+        t.lt(90)
+
+square(bob, 10)
+
+turtle.mainloop()
